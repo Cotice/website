@@ -1,0 +1,20 @@
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      {{ with .Site.Params.navbar }}
+      <a href="{{ .url }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <!-- Would be better with a logo -->
+        {{ .name }}
+      </a>
+      {{ end }}
+      <ul class="nav nav-pills">
+        {{ range .Site.Params.navbar.nav }}
+        <li class="nav-item">
+          <a href="{{ .url }}" class="nav-link text-white{{ if .current }} active{{ end }}">{{ .name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</header>
+
