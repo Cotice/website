@@ -1,0 +1,51 @@
+baseURL = "https://cotice.eu/"
+languageCode = "fr"
+defaultContentLanguage = "fr"
+title = "Association Cotice"
+
+theme = "cotice-theme"
+
+[params]
+    author = "Association Cotice"
+    description = "Association Cotice - Propose du housing, du BGP, des tunnels, du VPN pour des geeks, par des geeks."
+
+    [params.navbar]
+        name = "Cotice"
+        url = "#"
+
+        [[params.navbar.nav]]
+        current = true
+        name = "Accueil"
+        url = "#"
+        [[params.navbar.nav]]
+        name = "Services"
+        url = "#"
+        [[params.navbar.nav]]
+        name = "Wiki"
+        url = "https://wiki.cotice.eu"
+    
+    [params.header]
+        name = "Association Cotice"
+        tagline = "Du housing, du BGP, des tunnels, du VPN, pour des geeks, par des geeks."
+
+    [params.summary]
+        url = "#"
+
+        [params.summary.description]
+
+        [[params.summary.description.items]]
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!"
+        [[params.summary.description.items]]
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum."
+
+
+        [params.summary.contact]
+        name = "Association Cotice"
+        address1 = "4 Rue du Roi Albert"
+        address2 = "57070 Metz, France"
+        phone = ""
+        email = "contact@cotice.eu"
+
+
+[params.footer]
+    copyright = "Hébergé par Cotice"
