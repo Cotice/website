@@ -20,13 +20,15 @@
             <br>
           </address>
           <address>
-            {{ if .phone }}
-            <abbr title="Phone">P:</abbr>
-            {{ .phone }}
+            {{ if .email }}
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:{{ .email }}">{{ .email }}</a>
             <br>
             {{ end }}
-            <abbr title="E-mail">E-mail:</abbr>
-            <a href="mailto:{{ .email }}">{{ .email }}</a>
+            {{ if .twitter }}
+            <i class="bi bi-twitter"></i>
+            <a href="https://twitter.com/{{ .twitter }}">@{{ .twitter }}</a>
+            {{ end }}
           </address>
           {{ end }}
         </div>

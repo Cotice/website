@@ -45,6 +45,7 @@ theme = "cotice-theme"
         address2 = "57070 Metz, France"
         phone = ""
         email = "contact@cotice.eu"
+        twitter = "AssoCotice"
 
 
 [params.footer]
