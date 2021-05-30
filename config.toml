@@ -11,15 +11,15 @@ theme = "cotice-theme"
 
     [params.navbar]
         name = "Cotice"
-        url = "#"
+        url = "/"
 
         [[params.navbar.nav]]
         current = true
         name = "Accueil"
-        url = "#"
+        url = "/"
         [[params.navbar.nav]]
         name = "Services"
-        url = "#"
+        url = "/services"
         [[params.navbar.nav]]
         name = "Wiki"
         url = "https://wiki.cotice.eu"
@@ -29,15 +29,14 @@ theme = "cotice-theme"
         tagline = "Du housing, du BGP, des tunnels, du VPN, pour des geeks, par des geeks."
 
     [params.summary]
-        url = "#"
-
         [params.summary.description]
-
         [[params.summary.description.items]]
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!"
+        description = "Cotice est une association inscrite régie par les [articles 21 à 79-IV du code civil local maintenus en vigueur dans les départements du Bas-Rhin, Haut-Rhin et Moselle](https://fr.wikipedia.org/wiki/Association_de_droit_local_alsacien-mosellan), ayant pour but la promotion de l'interconnexion de réseaux informatiques."
         [[params.summary.description.items]]
-        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum."
+        description = """### Actualités
 
+* **2020-05-29** : Inscription au tribunal judiciaire de Metz.
+* **2020-02-20** : Assemblée générale constitutive."""
 
         [params.summary.contact]
         name = "Association Cotice"
@@ -47,6 +46,10 @@ theme = "cotice-theme"
         email = "contact@cotice.eu"
         twitter = "AssoCotice"
 
+    [params.services]
+        url = "/services"
+        [params.services.description]
+        [params.services.description.items]
 
 [params.footer]
     copyright = "Hébergé par Cotice"

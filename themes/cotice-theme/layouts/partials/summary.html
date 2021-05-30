@@ -4,9 +4,11 @@
           <h2>{{ i18n "about" }}</h2>
           <hr>
           {{ range .Site.Params.summary.description.items }}
-          <p>{{ .description }}</p>
+          <p>{{ .description | markdownify }}</p>
           {{ end }}
+          {{ if .Site.Params.summary.url }}
           <a class="btn btn-primary btn-lg" href="{{ .Site.Params.summary.url }}">{{ i18n "more" }} &raquo;</a>
+          {{ end }}
         </div>
 
         <div class="col-md-4 mb-5">
