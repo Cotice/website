@@ -6,3 +6,5 @@
   translation: Accueil
 - id: link
   translation: En savoir plus
+- id: services
+  translation: Services
