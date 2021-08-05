@@ -19,7 +19,7 @@ def render_page(environment, directory, page):
 
 def main():
     pages_dir = BASE_DIR / "pages"
-    rendered_dir = BASE_DIR / "public"
+    rendered_dir = BASE_DIR / "docs"
 
     if not pages_dir.is_dir():
         print("pages must be a directory")
